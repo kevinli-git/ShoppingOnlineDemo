@@ -35,7 +35,7 @@ const ShoppingCart = props => {
             })
         };
         placeOrder({ order }).then(data => {
-            // clear cart
+            // clear shopping cart
             props.clearCart();
             // navigate to thank you
             goThankYou();

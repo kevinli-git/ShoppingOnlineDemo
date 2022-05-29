@@ -7,7 +7,7 @@ const Products = props => {
 
     useEffect(() => {
         props.fetchData(props.url);
-    }, []);
+    }, [props]);
 
     if (props.isLoading) return <span>loading...</span>;
     return (
